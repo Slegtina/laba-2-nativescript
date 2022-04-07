@@ -1,38 +1,65 @@
 import { Observable } from '@nativescript/core'
+import { Frame } from '@nativescript/core'
 
 export class HelloWorldModel extends Observable {
-  private _counter: number
-  private _message: string
-
-  constructor() {
-    super()
-
-    // Initialize default values.
-    this._counter = 42
-    this.updateMessage()
+  open(args) {
+    Frame.topmost().navigate({
+      moduleName: 'volume-page',
+      context: "",
+      animated: true,
+      transition: {
+        name: 'slide',
+        duration: 200,
+        curve: 'ease',
+      },
+    })
   }
-
-  get message(): string {
-    return this._message
+  open2(args) {
+    Frame.topmost().navigate({
+      moduleName: 'square-page',
+      context: "",
+      animated: true,
+      transition: {
+        name: 'slide',
+        duration: 200,
+        curve: 'ease',
+      },
+    })
   }
-
-  set message(value: string) {
-    if (this._message !== value) {
-      this._message = value
-      this.notifyPropertyChange('message', value)
-    }
+  open3(args) {
+    Frame.topmost().navigate({
+      moduleName: 'length-page',
+      context: "",
+      animated: true,
+      transition: {
+        name: 'slide',
+        duration: 200,
+        curve: 'ease',
+      },
+    })
   }
-
-  onTap() {
-    this._counter--
-    this.updateMessage()
+  open4(args) {
+    Frame.topmost().navigate({
+      moduleName: 'mass-page',
+      context: "",
+      animated: true,
+      transition: {
+        name: 'slide',
+        duration: 200,
+        curve: 'ease',
+      },
+    })
   }
-
-  private updateMessage() {
-    if (this._counter <= 0) {
-      this.message = 'Hoorraaay! You unlocked the NativeScript clicker achievement!'
-    } else {
-      this.message = `${this._counter} taps left`
-    }
+  open5(args) {
+    Frame.topmost().navigate({
+      moduleName: 'currency-page',
+      context: "",
+      animated: true,
+      transition: {
+        name: 'slide',
+        duration: 200,
+        curve: 'ease',
+      },
+    })
   }
 }

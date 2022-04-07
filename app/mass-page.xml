@@ -1,0 +1,27 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+  
+    <ActionBar>
+    <Label text="Конвертор массы" horizontalAlignment="center" /> 
+    </ActionBar>
+     <StackLayout backgroundColor="#FFFFFF"  >
+        <GridLayout columns="*,*,*" rows="*,*,*,*,*,*,*" backgroundColor="#FFFFFF">
+            <TextField  tap="{{onTap}}" row="0" col="0"  colSpan="2"/>
+            <ListPicker items="{{ values }}" selectedIndex="0"  row="0" col="2"/>
+            <Button  text="⇄" tap="{{onTap}}" row="1" col="1" class="btn1"/>
+            <TextField   tap="{{onTap}}" row="2" col="0" colSpan="2"/>
+            <ListPicker items="{{ values }}" selectedIndex="0"  row="2" col="2"/>
+            <Button  text="7" tap="{{onTap}}" row="3" col="0" class="btn" />
+            <Button  text="8" tap="{{onTap}}" row="3" col="1" class="btn" />
+            <Button  text="9" tap="{{onTap}}" row="3" col="2" class="btn" />
+            <Button  text="4" tap="{{onTap}}" row="4" col="0" class="btn" />
+            <Button  text="5" tap="{{onTap}}" row="4" col="1" class="btn" />
+            <Button  text="6" tap="{{onTap}}" row="4" col="2" class="btn" />
+            <Button  text="1" tap="{{onTap}}" row="5" col="0" class="btn" />
+            <Button  text="2" tap="{{onTap}}" row="5" col="1" class="btn" />
+            <Button  text="3" tap="{{onTap}}" row="5" col="2" class="btn" />
+            <Button  text="0" tap="{{onTap}}" row="6" col="0" class="btn" />
+            <Button  text="." tap="{{onTap}}" row="6" col="1" class="btn" />
+            <Button  text="⌫" tap="{{onTap}}" row="6" col="2" class="btn" />
+        </GridLayout>
+    </StackLayout>
+</Page>

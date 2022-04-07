@@ -21,5 +21,54 @@ The following CSS rule changes the font size of all Buttons that have the
 '-primary' class modifier.
 */
 Button.-primary {
-  font-size: 18;
+  font-size: 60;
 }
+.img{
+  border-color: #fff;
+  border-width:20px;
+  height:500px;
+  width:500px;
+}
+.calc-screen{
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  margin-bottom: 25px;
+  text-align: right;
+  font-size: 100px;
+  margin: 0;
+  color: #ffffff;
+}
+.btn{
+  width: 250px;
+  height: 250px;
+  background: #00acae;
+  border-radius: 50%; 
+  text-align: center;
+  line-height: 230px;
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+  color: #ffffff;
+}
+.btn1{
+  width: 250px;
+  height: 250px;
+  background: #00acae;
+  text-align: center;
+  line-height: 230px;
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+  color: #ffffff;
+}
+.btn:hover{
+  filter: brightness(120%);
+}
+.btn:active{
+ filter: brightness(90%);
+}
+.btn.bg-grey{
+ background: #a6a6a6;
+}
+
