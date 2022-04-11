@@ -1,7 +1,7 @@
-import { Observable, EventData, ListPicker  } from '@nativescript/core'
+import { Observable, EventData, ListPicker} from '@nativescript/core'
 
 const digit = ['0','1','2','3','4','5','6','7','8','9','.'];
-const units = {'мм²':1, 'см²':0.01, 'м²':0.000001 ,'км²':0.000000000001};
+const units = {'мм²':1, 'см²':100, 'м²':100000 ,'км²':1000000000000};
 const values2 = ["мм²","см²","м²","км²"];
 let selected1 = 0;
 let selected2 = 0; 

@@ -5,7 +5,7 @@
     </ActionBar>
      <StackLayout backgroundColor="#FFFFFF"  >
         <GridLayout columns="*,*,*" rows="*,*,*,*,*,*,*" backgroundColor="#FFFFFF">
-             <Label text="{{ num1 }}" row="0" col="0"  colSpan="2" class="calc-screen"/>
+            <Label text="{{ num1 }}" row="0" col="0"  colSpan="2" class="calc-screen"/>
             <ListPicker items="{{ values }}" selectedIndex="{{sel1}}"  row="0" col="2" loaded="{{onListPickerLoaded1}}"/>
             <Button  text="⇄" tap="{{onTap}}" row="1" col="1" class="btn1"/>
             <Label text="{{ num2 }}" row="2" col="0" colSpan="2" class="calc-screen"/>

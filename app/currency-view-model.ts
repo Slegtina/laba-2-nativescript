@@ -9,11 +9,9 @@ let selected2 = 0;
 function convert(num: number, index1: number, index2:number){
      const mul1 = units[values2[index1]];
      const mul2 = units[values2[index2]];
-     // Сначала переводим в доллары с помощью деления, 
-     // а потом переводим в нужную валюту умножением
      num = (num/mul1)*mul2
 
-     return num.toFixed(2); // возвращаем результат с окргулением до 2-ух знаков после запятой
+     return num.toFixed(2); 
 }
 
 export class currency extends Observable {
