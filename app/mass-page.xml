@@ -5,11 +5,11 @@
     </ActionBar>
      <StackLayout backgroundColor="#FFFFFF"  >
         <GridLayout columns="*,*,*" rows="*,*,*,*,*,*,*" backgroundColor="#FFFFFF">
-            <TextField  tap="{{onTap}}" row="0" col="0"  colSpan="2"/>
-            <ListPicker items="{{ values }}" selectedIndex="0"  row="0" col="2"/>
+            <Label text="{{ num1 }}" row="0" col="0"  colSpan="2" class="calc-screen"/>
+            <ListPicker items="{{ values }}" selectedIndex="{{sel1}}"  row="0" col="2" loaded="{{onListPickerLoaded1}}"/>
             <Button  text="⇄" tap="{{onTap}}" row="1" col="1" class="btn1"/>
-            <TextField   tap="{{onTap}}" row="2" col="0" colSpan="2"/>
-            <ListPicker items="{{ values }}" selectedIndex="0"  row="2" col="2"/>
+            <Label text="{{ num2 }}" row="2" col="0" colSpan="2" class="calc-screen"/>
+            <ListPicker items="{{ values }}" selectedIndex="{{sel2}}"  row="2" col="2" loaded="{{onListPickerLoaded2}}"/>
             <Button  text="7" tap="{{onTap}}" row="3" col="0" class="btn" />
             <Button  text="8" tap="{{onTap}}" row="3" col="1" class="btn" />
             <Button  text="9" tap="{{onTap}}" row="3" col="2" class="btn" />
